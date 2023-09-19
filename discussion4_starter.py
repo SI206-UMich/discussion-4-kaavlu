@@ -18,7 +18,7 @@ class Rectangle():
 
     # YOUR CODE HERE
     def __str__(self):
-        return "A rectangle with a width " + self.width + " and height " + self.height 
+        return "A rectangle with a width " + str(self.width) + " and height " + str(self.height) 
 
     # Create the "verify_input" method
     #
@@ -38,7 +38,7 @@ class Rectangle():
 
     # YOUR CODE HERE
     def area(self):
-        if(verify_input(self)):
+        if(self.verify_input()):
             return str(self.width * self.height)
         else:
             return "Invalid input"
@@ -51,7 +51,7 @@ class Rectangle():
 
     # YOUR CODE HERE
     def perimeter(self):
-        if(verify_input(self)):
+        if(self.verify_input(self)):
             return str((2 * self.width) + (2 * self.height))
         else:
             return "Invalid input"
